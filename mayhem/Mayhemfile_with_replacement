@@ -1,0 +1,5 @@
+project: simdutf
+target: with_replacement
+cmds:
+  - cmd: /mayhem/with_replacement
+    libfuzzer: true

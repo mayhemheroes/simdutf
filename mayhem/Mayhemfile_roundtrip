@@ -1,0 +1,5 @@
+project: simdutf
+target: roundtrip
+cmds:
+  - cmd: /mayhem/roundtrip
+    libfuzzer: true

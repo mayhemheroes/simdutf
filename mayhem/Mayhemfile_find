@@ -1,0 +1,8 @@
+project: simdutf
+target: find
+testsuite: # mayhem-lint: keep-testsuite — find harness requires [action(1)][needle(2)][pad(1)][payload] header; seeds bootstrap the format
+  - file:///mayhem/mayhem/testsuite/find
+cmds:
+  - cmd: /mayhem/find
+    libfuzzer: true
+    cwd: /dev/shm  # libFuzzer -merge writes /tmp/libFuzzerTemp.* which is read-only under Mayhem coverage; /dev/shm is always-writable tmpfs

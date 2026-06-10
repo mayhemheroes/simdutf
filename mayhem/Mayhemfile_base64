@@ -1,0 +1,5 @@
+project: simdutf
+target: base64
+cmds:
+  - cmd: /mayhem/base64
+    libfuzzer: true

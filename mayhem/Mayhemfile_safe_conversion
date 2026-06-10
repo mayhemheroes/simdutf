@@ -1,0 +1,5 @@
+project: simdutf
+target: safe_conversion
+cmds:
+  - cmd: /mayhem/safe_conversion
+    libfuzzer: true

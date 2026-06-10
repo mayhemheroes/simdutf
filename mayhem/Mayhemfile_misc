@@ -1,0 +1,5 @@
+project: simdutf
+target: misc
+cmds:
+  - cmd: /mayhem/misc
+    libfuzzer: true
